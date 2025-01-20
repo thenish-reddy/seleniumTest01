@@ -1,7 +1,9 @@
+import os
 from dependencies import get_driver
 from Testcases import login_to_salesforce
 from decouple import config
 
+config = Config(search_path='/home/ubuntu/seleniumTest01')
 USERNAME = config('APP_USERNAME')
 PASSWORD = config('APP_PASSWORD')
 SECRET_KEY = "26krycrrp6pbjc55"
